@@ -91,7 +91,6 @@ i:focus {
   font-size: 3rem;
   letter-spacing: 1rem;
   color: #333;
-  cursor: pointer;
 }
 
 #projects [class*="project-"] {
@@ -142,6 +141,7 @@ i:focus {
 .btn:visited {
   background-color: rgba(0, 0, 0, 0.9);
   border: 2px solid #fff;
+  font-weight: bold;
 }
 
 .btn a {
@@ -205,4 +205,21 @@ ul.pagination li a:focus {
   .small-nav {
     display: inline;
   }
+}
+
+.img-container {
+  overflow: hidden;
+}
+
+.img-container img {
+  transition: transform 0.5s ease;
+}
+
+.img-container img:hover {
+  transform: scale(1.5);
+}
+
+::selection {
+  color: #fff;
+  background-color: #78addb;
 }
